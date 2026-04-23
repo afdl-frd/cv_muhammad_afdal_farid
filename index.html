@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <meta property="og:title" content="CV MUHAMMAD AFDAL FARID">
+    <meta property="og:description" content="CV">
+    <meta property="og:image" content="public/thumbnail.png">
+    <meta property="og:url" content="https://alamak88999.github.io/cv-muhammad-afdal-farid/">
+    <meta property="og:type" content="website">
+    
+    <title>CV Muhammad Afdal Farid</title>
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="no-print">
+        <div class="nav-container">
+            <span class="logo">AF<span>.</span></span>
+            <button id="downloadBtn" class="btn-print">
+                <i class="fas fa-file-pdf"></i> Simpan ke PDF
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <main class="paper" id="cv-content">
+            
+            <header class="cv-header">
+                <div class="header-info">
+                    <h1>MUHAMMAD AFDAL FARID</h1>
+                    <p class="tagline">Informatics Student | Web Developer</p>
+                    <div class="contact-grid">
+                        <span><i class="fas fa-envelope"></i> afdal@example.com</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Pontianak, Indonesia</span>
+                        <span><i class="fab fa-github"></i> github.com/afdal</span>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="src/assets/profile/profile.png" alt="Foto Profil">
+                </div>
+            </header>
+
+            <hr class="divider">
+
+            <section class="cv-section">
+                <h3>PROFIL PROFESIONAL</h3>
+                <p>Siswa kelas XII di SMA Negeri 5 Pontianak dengan minat mendalam pada pengembangan web. Memiliki pengalaman membangun solusi digital untuk organisasi sekolah (PMR) dan mahir dalam mengintegrasikan sistem database sederhana menggunakan teknologi web modern.</p>
+            </section>
+
+            <section class="cv-section">
+                <h3>PENGALAMAN & PROYEK <small>(Klik untuk detail)</small></h3>
+                
+                <div class="exp-item toggle-detail">
+                    <div class="exp-title">
+                        <strong>Web Developer - PMR SMAN 5 Pontianak</strong>
+                        <span class="date">2025 — 2026 <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <p class="summary">Penerapan sistem pendataan digital otomatis.</p>
+
+                    <div class="exp-details">
+                        <div class="proof-item">
+                            <img src="bukti1.jpg" alt="Antarmuka Web">
+                            <div class="proof-desc">
+                                <h4>Interface Dashboard</h4>
+                                <p>Sistem input data anggota yang responsif menggunakan HTML dan CSS murni.</p>
+                            </div>
+                        </div>
+                        <div class="proof-item">
+                            <img src="bukti2.jpg" alt="Database">
+                            <div class="proof-desc">
+                                <h4>Automasi Google Sheets</h4>
+                                <p>Logika pengiriman data menggunakan Google Apps Script untuk manajemen real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-item toggle-detail">
+                    <div class="exp-title">
+                        <strong>Anggota Organisasi - PMR PCA 15</strong>
+                        <span class="date">2024 — 2025 <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <p class="summary">Manajemen administrasi dan pertolongan pertama.</p>
+                    <div class="exp-details">
+                        <div class="proof-item">
+                            <div class="proof-desc">
+                                <h4>Administrasi Angkatan</h4>
+                                <p>Bertanggung jawab dalam pengelolaan data kehadiran dan inventaris kesehatan sekolah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cv-section">
+                <h3>KEAHLIAN</h3>
+                <div class="skills-grid">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span> 
+                    <span>Apps Script</span>
+                    <span>Git</span>
+                    <span>Web Design</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/pdf.js"></script>
+</body>
+</html>
