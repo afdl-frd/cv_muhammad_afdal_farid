@@ -27,8 +27,13 @@
     <nav class="no-print">
         <div class="nav-container">
             <span class="logo">AF<span>.</span></span>
+            <span data-target="profile" class="nav-btn active">PROFILE</span>
+            <span data-target="pendidikan" class="nav-btn">PENDIDIKAN</span>
+            <span data-target="pengalaman" class="nav-btn">PENGALAMAN</span>
+            <span data-target="keahlian" class="nav-btn">KEAHLIAN</span>
+            
             <button id="downloadBtn" class="btn-print">
-                <i class="fas fa-file-pdf"></i> Simpan ke PDF
+                <i class="fas fa-file-pdf"></i>
             </button>
         </div>
     </nav>
@@ -39,11 +44,11 @@
             <header class="cv-header">
                 <div class="header-info">
                     <h1>MUHAMMAD AFDAL FARID</h1>
-                    <p class="tagline">Informatics Student | Web Developer</p>
+                    <p class="tagline">Informatics Student</p>
                     <div class="contact-grid">
-                        <span><i class="fas fa-envelope"></i> afdal@example.com</span>
+                        <span><i class="fas fa-envelope"></i> afdlfrd@gmail.com</span>
                         <span><i class="fas fa-map-marker-alt"></i> Pontianak, Indonesia</span>
-                        <span><i class="fab fa-github"></i> github.com/afdal</span>
+                        <span><i class="fab fa-github"></i> afdl-frd.github.io</span>
                     </div>
                 </div>
                 <div class="header-photo">
@@ -54,14 +59,44 @@
             <hr class="divider">
 
             <section class="cv-section">
-                <h3>PROFIL PROFESIONAL</h3>
-                <p>Siswa kelas XII di SMA Negeri 5 Pontianak dengan minat mendalam pada pengembangan web. Memiliki pengalaman membangun solusi digital untuk organisasi sekolah (PMR) dan mahir dalam mengintegrasikan sistem database sederhana menggunakan teknologi web modern.</p>
+                <h3 id="profile">PROFIL</h3>
+                <p>Mahasiswa UBSI Pontianak dengan latar belakang berbagai organisasi. Pernah ikut organisasi PMR dan aktif di organisasi kemanusiaan PMI sebagai KSR & TSR, serta pernah menjadi anggota ekstra kulikuler Catur dan juga Karate. Terbiasa bekerja dalam tim, kemampuan problem solving, memiliki ketertarikan untuk belajar banyak hal baru.</p>
+            </section>
+            
+            <section class="cv-section">
+                <h3 id="pendidikan" >RIWAYAT PENDIDIKAN</h3>
+                <div class="container-pendidikan">
+                  <h4>S1 Informatika</h4>
+                  <h5>Universitas Bina Sarana Informatika</h5>
+                  <div class="tahun-ajar">2026-sekarang</div>
+                  <p>Menempuh pendidikan di UBSI (Pontianak)</p>
+                  <p>Fokus: Web Developer - Frontend</p>
+                </div>
+                <br />
+                <div class="container-pendidikan">
+                  <h4>SEKOLAH MENENGAH ATAS</h4>
+                  <div class="tahun-ajar">2023-2026</div>
+                  <p>Bersekolah di SMA Negeri 05 Pontianak Utara</p>
+                </div>
+                <br />
+                <div class="container-pendidikan">
+                  <h4>SEKOLAH MENENGAH PERTAMA</h4>
+                  <div class="tahun-ajar">2020-2023</div>
+                  <p>Bersekolah di SMP Negeri 07 Pontianak Utara</p>
+                </div>
+                <br />
+                <div class="container-pendidikan">
+                  <h4>SEKOLAH DASAR</h4>
+                  <div class="tahun-ajar">2014-2020</div>
+                  <p>Bersekolah di SD Negeri 39 Pontianak Utara</p>
+                </div>
             </section>
 
             <section class="cv-section">
-                <h3>PENGALAMAN & PROYEK <small>(Klik untuk detail)</small></h3>
+                <h3 id="Pengalaman" >PENGALAMAN & PROYEK <small>(Klik untuk detail)</small></h3>
                 
-                <div class="exp-item toggle-detail">
+                <!-- Pengalaman & proyek 1 -->
+                <div id="pengalaman" class="exp-item toggle-detail">
                     <div class="exp-title">
                         <strong>Web Developer - PMR SMAN 5 Pontianak</strong>
                         <span class="date">2025 — 2026 <i class="fas fa-chevron-down"></i></span>
@@ -85,18 +120,36 @@
                         </div>
                     </div>
                 </div>
-
+                
+                <!-- pengalaman & proyek 2 -->
                 <div class="exp-item toggle-detail">
                     <div class="exp-title">
-                        <strong>Anggota Organisasi - PMR PCA 15</strong>
-                        <span class="date">2024 — 2025 <i class="fas fa-chevron-down"></i></span>
+                        <strong>Anggota Organisasi - PMR SMP Negeri 07 Pontianak</strong>
+                        <span class="date">2021 — 2023 <i class="fas fa-chevron-down"></i></i>
                     </div>
-                    <p class="summary">Manajemen administrasi dan pertolongan pertama.</p>
+                    <p class="summary">Koordinator</p>
                     <div class="exp-details">
                         <div class="proof-item">
                             <div class="proof-desc">
-                                <h4>Administrasi Angkatan</h4>
-                                <p>Bertanggung jawab dalam pengelolaan data kehadiran dan inventaris kesehatan sekolah.</p>
+                                <h4>Koordinator Angkatan</h4>
+                                <p>Bertanggung jawab dalam mengatur anggota yang bertugas dan menjadi jembatan komunikasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- pemgalaman & proyek 3 -->
+                <div class="exp-item toggle-detail">
+                    <div class="exp-title">
+                        <strong>Anggota Organisasi - PMR SMA Negeri 05 Pontianak</strong>
+                        <span class="date">2021 — 2023 <i class="fas fa-chevron-down"></i></i>
+                    </div>
+                    <p class="summary">ketua</p>
+                    <div class="exp-details">
+                        <div class="proof-item">
+                            <div class="proof-desc">
+                                <h4>Koordinator Angkatan</h4>
+                                <p>Bertanggung jawab dalam mengatur anggota yang bertugas dan menjadi jembatan komunikasi.</p>
                             </div>
                         </div>
                     </div>
@@ -104,7 +157,7 @@
             </section>
 
             <section class="cv-section">
-                <h3>KEAHLIAN</h3>
+                <h3 id="keahlian" >KEAHLIAN</h3>
                 <div class="skills-grid">
                     <span>HTML5</span>
                     <span>CSS3</span>
@@ -116,7 +169,7 @@
             </section>
 
         </main>
-    </div>
+    </d>
 
     <script src="src/js/script.js"></script>
     <script src="src/js/pdf.js"></script>
