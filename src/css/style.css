@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20vh;
+}
+
 body {
     background-color: var(--bg-workspace);
     font-family: 'Inter', sans-serif;
@@ -62,6 +67,21 @@ nav {
 
 .btn-print:hover {
     background: #334155;
+}
+
+.nav-btn {
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: #3498db;
+  background-color: #f0f8ff;
+}
+
+.nav-btn.active {
+  color: #fff;
+  background-color: #3498db;
 }
 
 /* --- Layout Utama --- */
@@ -138,6 +158,17 @@ h1 {
 .cv-section p {
     font-size: 0.95rem;
     text-align: justify;
+}
+
+.container-pendidikan {
+  background-color: #f6fbfd;
+  width: auto;
+  border-radius: 5px;
+}
+
+.tahun-ajar {
+  font-size: 0.75rem;
+  color: #7780b1;
 }
 
 /* --- Detail Pengalaman (Accordion) --- */
@@ -283,4 +314,27 @@ h1 {
         padding: 0;
         width: 100%;
     }
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Garisnya bikin pake ::after */
+h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Awalnya 0, nggak keliatan */
+    height: 3px;
+    background-color: #3498db; /* Warna garis */
+    transition: width 0.6s ease-out; /* Animasi 0.6 detik */
+}
+
+/* Class ini bakal ditambahin JS pas keliatan */
+h3.active::after {
+    width: 100%; /* Jadi full pas aktif */
 }
