@@ -6,7 +6,7 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     const allItems = document.querySelectorAll('.exp-item');
     allItems.forEach(item => item.classList.add('active'));
 
-    downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
+    downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
     const opt = {
         margin:       10, // Margin PDF (mm)
@@ -18,7 +18,7 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
 
     // Jalankan konversi
     html2pdf().set(opt).from(element).save().then(() => {
-        downloadBtn.innerHTML = '<i class="fas fa-file-pdf"></i> Simpan ke PDF';
+        downloadBtn.innerHTML = '<i class="fas fa-file-pdf"></i>';
         // Opsional: Tutup kembali setelah download (aktifkan jika mau)
         // allItems.forEach(item => item.classList.remove('active'));
     });
